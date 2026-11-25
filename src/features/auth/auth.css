@@ -1,0 +1,40 @@
+.login { min-height: 100%; display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); background: var(--cream); }
+
+.login-hero {
+  position: relative; overflow: hidden; color: #fff3df;
+  background:
+    radial-gradient(900px 500px at 15% 10%, rgba(230, 162, 60, 0.35), transparent 60%),
+    radial-gradient(700px 500px at 90% 95%, rgba(184, 74, 48, 0.55), transparent 60%),
+    linear-gradient(160deg, #3d2417 0%, #2d1c13 100%);
+  display: flex; flex-direction: column; justify-content: flex-end; padding: 56px;
+}
+.login-plate {
+  position: absolute; top: 12%; right: -90px; width: 420px; height: 420px; border-radius: 50%;
+  background: radial-gradient(circle, #f3d9a8 0 22%, #e6a23c 23% 24%, #fbe9c6 25% 52%, #f0d9b6 53% 60%, #d9b27a 61% 100%);
+  box-shadow: 0 40px 80px -30px rgba(0, 0, 0, 0.6), inset 0 0 0 10px rgba(255, 255, 255, 0.18);
+  opacity: 0.95;
+}
+.login-plate span { position: absolute; inset: 22%; border-radius: 50%; border: 2px dashed rgba(143, 93, 11, 0.45); }
+.login-hero-text { position: relative; max-width: 440px; }
+.login-brand { font-family: var(--font-display); font-weight: 700; font-size: 20px; letter-spacing: 0.02em; color: var(--saffron); }
+.login-hero h2 { font-size: 42px; line-height: 1.1; margin: 14px 0 12px; color: #fffaf1; }
+.login-hero p { color: #e8d3b6; font-size: 17px; }
+
+.login-panel { display: flex; align-items: center; justify-content: center; padding: 32px 20px; }
+.login-card {
+  width: 100%; max-width: 420px; display: flex; flex-direction: column; gap: 18px;
+  background: var(--paper); border: 1px solid var(--line); border-radius: 22px; padding: 36px; box-shadow: var(--shadow);
+}
+.login-lock {
+  width: 44px; height: 44px; display: grid; place-items: center; border-radius: 14px;
+  background: var(--terracotta-soft); color: var(--terracotta-dark);
+}
+.otp-input { text-align: center; font-size: 26px; letter-spacing: 0.5em; height: 56px; font-variant-numeric: tabular-nums; padding-left: 0.5em; }
+.link-btn { background: none; border: none; color: var(--terracotta-dark); font: inherit; font-weight: 600; cursor: pointer; padding: 4px; align-self: center; }
+.link-btn:hover { text-decoration: underline; }
+
+@media (max-width: 860px) {
+  .login { grid-template-columns: 1fr; }
+  .login-hero { display: none; }
+  .login-panel { min-height: 100vh; background: linear-gradient(180deg, var(--sand), var(--cream) 50%); }
+}

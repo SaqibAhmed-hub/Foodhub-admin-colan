@@ -1,0 +1,6 @@
+.search { position: relative; margin-bottom: 16px; max-width: 420px; color: var(--muted); }
+.search svg { position: absolute; left: 14px; top: 12px; pointer-events: none; }
+.search .input { padding-left: 40px; }
+.person { display: flex; align-items: center; gap: 12px; }
+.initial { width: 36px; height: 36px; border-radius: 50%; display: grid; place-items: center; flex: none; background: var(--saffron-soft); color: var(--saffron-dark); font-weight: 700; font-family: var(--font-display); }
+.pager { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding-top: 16px; }

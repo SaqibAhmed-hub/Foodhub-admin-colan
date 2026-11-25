@@ -1,0 +1,21 @@
+.report-tabs { display: inline-flex; gap: 4px; padding: 4px; background: var(--sand); border-radius: 12px; align-self: flex-start; max-width: 100%; overflow-x: auto; }
+.report-tab { border: 0; background: transparent; color: var(--cocoa-2); font: inherit; font-weight: 600; font-size: 14px; padding: 8px 14px; border-radius: 9px; cursor: pointer; white-space: nowrap; }
+.report-tab:hover { background: rgba(255, 250, 241, 0.6); }
+.report-tab.active { background: var(--paper); color: var(--terracotta-dark); box-shadow: var(--shadow); }
+.report-tab:focus-visible { outline: none; box-shadow: var(--focus); }
+
+.report-controls { display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.report-controls .field { min-width: 200px; }
+.report-actions { gap: 10px; }
+
+.report-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; flex-wrap: wrap; }
+.report-stats { display: flex; gap: 12px; margin: 0; flex-wrap: wrap; }
+.report-stats > div { background: var(--sand); border-radius: 12px; padding: 10px 16px; min-width: 110px; }
+.report-stats dt { font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); font-weight: 600; }
+.report-stats dd { margin: 2px 0 0; font-family: var(--font-display); font-size: 22px; font-weight: 600; }
+
+.report-table { font-size: 13.5px; }
+.report-table th, .report-table td { padding-left: 8px; padding-right: 8px; }
+.report-table th { line-height: 1.25; vertical-align: bottom; }
+.report-table td:first-child { white-space: nowrap; }
+.report-table tfoot td { font-weight: 700; background: var(--sand); border-top: 2px solid var(--line-strong); }
